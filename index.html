@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alteri Privacy Policy — Development Draft</title>
+<style>
+body { max-width: 48rem; margin: 3rem auto; padding: 0 1.25rem; font: 1rem/1.6 system-ui, sans-serif; color: #172033; background: #fff; }
+h1, h2 { line-height: 1.25; }
+h2 { margin-top: 2rem; }
+a { color: #174ea6; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<!-- Static policy page only: no scripts, login forms, or app data. -->
+<main>
+<h1>Alteri Privacy Policy — Development Draft</h1>
+<p>Last updated: November 11, 2026</p>
+<p>Alteri is a student project for creating personal experiments, recording check-ins, and exploring fitness measurements. The project is under development. This draft describes the current app and separately identifies planned WHOOP functionality.</p>
+<h2>Contact</h2>
+<p>For questions about personal information, access, or deletion, contact jayarshs@gmail.com. Do not include passwords or access tokens in your message.</p>
+<h2>Current account and app information</h2>
+<p>Alteri uses Google Firebase Authentication for email/password signup, login, and password reset. Firebase processes account credentials and maintains an account identifier. Alteri uses that identifier to associate the signed-in account with its local profile. Alteri does not store passwords in its SwiftData database.</p>
+<p>The app stores profile names, Athlete/Coach roles, experiments, check-ins, notes, templates, and any saved measurements locally on the device using SwiftData. Firebase login does not synchronize those local records between devices. Published Coach templates are available in the template library on the same app installation. The app also includes fictional demonstration accounts, kept separate from Firebase-linked accounts.</p>
+<h2>Planned WHOOP connection</h2>
+<p>WHOOP connectivity is not yet active. The intended integration will ask for permission to read recovery information, including recovery score, heart rate variability, and resting heart rate. This information will support the user&#x27;s personal experiments.</p>
+<p>Authorization will take place through WHOOP. Alteri will not ask users to enter their WHOOP password into an Alteri form. A backend is planned to handle authorization tokens and requests to WHOOP; the WHOOP application secret will remain server-side. Retrieved measurements will be associated with the user&#x27;s account and saved locally for use in the app.</p>
+<p>Before real WHOOP connections are enabled, this policy will be updated to identify the backend hosting provider, exactly what information and tokens it retains, retention periods, and disconnect/deletion procedures.</p>
+<h2>Service providers</h2>
+<p>Firebase processes authentication information under Google&#x27;s applicable terms and privacy policies. WHOOP processes information under its own applicable policies. If this policy is hosted using GitHub Pages, GitHub processes website visitor information, including IP addresses, as described in its privacy statement.</p>
+<ul><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li><li><a href="https://www.whoop.com/us/en/privacy/">WHOOP Privacy Policy</a></li><li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a></li></ul>
+<h2>Keeping and deleting information</h2>
+<p>Signing out does not delete a Firebase account or local app records. Local records remain on the device until removed using available app actions or the app&#x27;s local storage is removed. Local data may also be included in device backups according to the user&#x27;s device settings.</p>
+<p>To request deletion of the Firebase account or ask how to remove local records, contact the email above. The project team may need to verify account ownership before acting. Local-only records are not remotely accessible to the team simply because a user requests deletion.</p>
+<h2>Changes</h2>
+<p>This policy will be revised as data handling changes. The date above identifies the latest revision.</p>
+</main>
+</body>
+</html>
